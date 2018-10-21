@@ -5,3 +5,4 @@ func GetDatabaseConstants()(string){
 	Text := "{\"Host\": \"localhost\",\"Port\": \"5432\",\"User\": \"postgres\",\"Password\": \"postgres\",\"Database\": \"light\"}"
 	return Text;
 }
+

@@ -2,14 +2,13 @@ package controllers
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/gorilla/mux"
+	statics "gobi/src/constants/app"
+	queries "gobi/src/constants/sql"
+	db "gobi/src/database/postgres"
 	"log"
 	"net/http"
 	"os"
-	queries "gobi/src/constants/sql"
-	statics "gobi/src/constants/app"
-	db "gobi/src/database/postgres"
 )
 
 func DeleteUser(w http.ResponseWriter, r *http.Request){
@@ -29,7 +28,13 @@ func DeleteUser(w http.ResponseWriter, r *http.Request){
 		 w.WriteHeader(http.StatusCreated)
 		 json.NewEncoder(w).Encode(map[string]string{"code":"200","message": "record sucessfully deleted"})
 	 }else {
-	 	fmt.Print(rows);
+		 log.Fatal("Host: "+host +"Port: " +port+ " result:= Not Deleted")
+		 log.Fatal(rows)
+		 w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		 w.WriteHeader(500) // unprocessable entity
+		 if err := json.NewEncoder(w).Encode(err); err != nil {
+			 panic(err)
+		 }
 	 }
 	defer conn.Close();
 }

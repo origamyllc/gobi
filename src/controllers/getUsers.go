@@ -37,8 +37,16 @@ func GetUsers(w http.ResponseWriter, r *http.Request){
 		}
 	}
 	m,err := json.Marshal(users);
-	log.Print("Host: "+host +"Port: " +port+ " result:= "+string(m))
-	json.NewEncoder(w).Encode(	map[string]string{"code": "200", "result": string(m)})
+	if string(m) != "null"  {
+		log.Print("Host: "+host +"Porsdt: " +port+ " result:= "+string(m))
+		json.NewEncoder(w).Encode(map[string]string{"code": "200", "result": string(m)})
+	} else {
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(500) // unprocessable entity
+		if err := json.NewEncoder(w).Encode(err); err != nil {
+			panic(err)
+		}
+	}
 	defer rows.Close()
 	defer conn.Close();
 

@@ -46,8 +46,11 @@ func CreateUser(w http.ResponseWriter, r *http.Request){
 		json.NewEncoder(w).Encode(map[string]string{"code":"200","message": "record sucessfully inserted"})
 	} else {
 		log.Print("Host: " + host + "Port: " + port + " result:= Not inserted")
-		w.WriteHeader(http.StatusInternalServerError)
-		json.NewEncoder(w).Encode(map[string]string{"code": "500", "message": "record not inserted"})
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(500) // unprocessable entity
+		if err := json.NewEncoder(w).Encode(err); err != nil {
+			panic(err)
+		}
 	}
 	defer conn.Close();
 }

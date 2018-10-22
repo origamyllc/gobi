@@ -24,8 +24,8 @@ func GetUsers(w http.ResponseWriter, r *http.Request){
 	host,_ := os.Hostname();
 	port := statics.PORT;
 	sqlStatement := queries.GET_USERS_QUERY;
-	var userDao user_dao.User;
-	var users []user_dao.User;
+	var userDao user_dao.UserResponse;
+	var users []user_dao.UserResponse;
 	rows,err := db.Get(sqlStatement,conn)
 	if err != nil {
 		log.Fatal("Host: "+host +"Port: " +port)

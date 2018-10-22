@@ -24,8 +24,8 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 	host, _ := os.Hostname();
 	port := statics.PORT;
 	sqlStatement := queries.GET_USER_BY_ID_QUERY + string(key);
-	var userDao user_dao.User;
-	var users []user_dao.User;
+	var userDao user_dao.UserResponse;
+	var users []user_dao.UserResponse;
 	rows,err := db.Get(sqlStatement,conn)
 	for rows.Next() {
 		error :=  rows.Scan(&userDao.ID, &userDao.Username, &userDao.Password,&userDao.Secret, &userDao.FirstName, &userDao.LastName, &userDao.Email,&userDao.OrganizationName,&userDao.Created,&userDao.Updated)

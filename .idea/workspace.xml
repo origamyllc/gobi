@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43b69e0a-0599-4897-a9c5-b76e6b0fb0ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/authenticateUser.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/Login/credentials.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/Login/jwt-token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/sql/queries.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/sql/queries.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/createUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/createUser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/deleteUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/deleteUser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/getUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/getUser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/getUsers.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/getUsers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/updateUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/updateUser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/User/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/User/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/postgres/postgres_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/postgres/postgres_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/authenticateUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authenticateUser.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,22 +105,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="40" />
+          <entry key="go" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="40" />
+          <entry key="Go" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="4607" />
+          <entry key="go" value="4679" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="4607" />
+          <entry key="Go" value="4679" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -148,20 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/createUser.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-              <folding>
-                <element signature="e#21#211#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -169,8 +144,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/constants/sql/queries.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="29" column="154" selection-start-line="29" selection-start-column="154" selection-end-line="29" selection-end-column="154" />
+            <state relative-caret-position="281">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/server.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -184,11 +168,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="31" column="100" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
+            <state relative-caret-position="271">
+              <caret line="21" column="207" selection-start-line="21" selection-start-column="207" selection-end-line="21" selection-end-column="207" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/authenticateUser.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-645">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -196,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/updateUser.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+            <state relative-caret-position="156">
+              <caret line="38" column="92" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -205,8 +198,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/getUsers.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="145">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
                 <element signature="e#21#204#0" expanded="true" />
               </folding>
@@ -215,19 +208,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/User/user.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/getUser.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="248">
+              <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -305,18 +289,18 @@
         <option value="$PROJECT_DIR$/src/dao/Login/login.go" />
         <option value="$PROJECT_DIR$/src/dao/Login/Jwttoken.go" />
         <option value="$PROJECT_DIR$/src/dao/Login/credentials.go" />
-        <option value="$PROJECT_DIR$/src/controllers/authenticateUser.go" />
         <option value="$PROJECT_DIR$/src/server/server.go" />
         <option value="$PROJECT_DIR$/src/dto/user.go" />
         <option value="$PROJECT_DIR$/src/dto/User/user.go" />
         <option value="$PROJECT_DIR$/src/controllers/getUsers.go" />
         <option value="$PROJECT_DIR$/src/controllers/getUser.go" />
-        <option value="$PROJECT_DIR$/src/constants/sql/queries.go" />
         <option value="$PROJECT_DIR$/src/dao/User/user.go" />
         <option value="$PROJECT_DIR$/src/controllers/deleteUser.go" />
-        <option value="$PROJECT_DIR$/src/controllers/createUser.go" />
         <option value="$PROJECT_DIR$/src/controllers/updateUser.go" />
+        <option value="$PROJECT_DIR$/src/controllers/createUser.go" />
         <option value="$PROJECT_DIR$/src/database/postgres/postgres_test.go" />
+        <option value="$PROJECT_DIR$/src/constants/sql/queries.go" />
+        <option value="$PROJECT_DIR$/src/controllers/authenticateUser.go" />
       </list>
     </option>
   </component>
@@ -415,6 +399,13 @@
               <item name="gobi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goTutorials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gobi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goTutorials" type="b2602c69:ProjectViewProjectNode" />
@@ -722,40 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/authenticateUser.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#21#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/getUsers.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="e#21#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/sql/queries.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="154" selection-start-line="29" selection-start-column="154" selection-end-line="29" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/User/user.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -770,10 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/getUser.go">
+    <entry file="file://$PROJECT_DIR$/src/controllers/deleteUser.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="251">
+          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -784,34 +741,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/createUser.go">
+    <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-          <folding>
-            <element signature="e#21#211#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="271">
+          <caret line="21" column="207" selection-start-line="21" selection-start-column="207" selection-end-line="21" selection-end-column="207" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/deleteUser.go">
+    <entry file="file://$PROJECT_DIR$/src/controllers/getUsers.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="145">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="e#21#204#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/updateUser.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+        <state relative-caret-position="156">
+          <caret line="38" column="92" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres_test.go">
+    <entry file="file://$PROJECT_DIR$/src/constants/sql/queries.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="31" column="100" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
+        <state relative-caret-position="281">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/createUser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/getUser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/authenticateUser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-645">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>

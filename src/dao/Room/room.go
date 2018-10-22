@@ -12,6 +12,12 @@ CREATE TABLE room (
 	room_average_monthly_energy_consumption    FLOAT(10),
 	room_average_yearly_energy_consumption     FLOAT(10)
 )
+
+alter table room
+      add constraint room_to_gateway
+      foreign key (room_id)
+      references gateway (gateway_id);
+
  */
 type Room struct {
 	RoomID                                 int

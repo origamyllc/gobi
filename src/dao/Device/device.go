@@ -29,6 +29,11 @@ alter table device
       foreign key (device_id)
       references protocols (protocol_id);
 
+alter table device
+      add constraint device_to_building_system
+      foreign key (device_id)
+      references building_system (building_system_id);
+
  */
 
 type Device struct {
@@ -56,4 +61,9 @@ type DeviceToSensor struct {
 type DeviceToProtocol struct {
 	DeviceID       int
 	ProtocolID   int
+}
+
+type DeviceToBuildingSystem struct {
+	DeviceID int
+	BuildingSystemID    int
 }

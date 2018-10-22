@@ -28,7 +28,14 @@ alter table sensor
       add constraint sensor_to_observable
       foreign key (sensor_id)
       references observable (observable_id);
+
+alter table sensor
+      add constraint sensor_to_building_system
+      foreign key (sensor_id)
+      references building_system (building_system_id);
+
  */
+
 type Sensor struct {
 	SensorID   string
 	SensorName string
@@ -54,4 +61,9 @@ type SensorToObservable struct {
 type SensorToProtocol struct {
 	SensorID       int
 	ProtocolID   int
+}
+
+type SensorToBuildingSystem struct {
+	SensorID int
+	BuildingSystemID    int
 }

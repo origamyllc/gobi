@@ -20,9 +20,14 @@ CREATE TABLE users (
 
 );
 
+CREATE TABLE tokens (
+   user_id     integer PRIMARY KEY NOT NULL,
+   token       varchar(256) NOT NULL
+)
+
 INSERT INTO users (username,  password, secret,first_name, last_name, email, organization_name )
 VALUES ('username','password', 'secret' ,'first_name', 'last_name', 'email', 'organization_name' )
-
+INSERT INTO tokens ( user_id,  token ) VALUES ('username','password')
  */
 
 const GET_USERS_QUERY  = `SELECT * FROM users`;
@@ -31,3 +36,4 @@ const GET_USER_BY_USER_NAME_AND_PASSWORD_QUERY = "SELECT * FROM users WHERE user
 const ADD_USER_QUERY = "INSERT INTO users (username,  password, secret, first_name, last_name, email, organization_name ) VALUES ('%s','%s','%s','%s','%s','%s','%s');"
 const DELETE_USER_BY_ID_QUERY = "DELETE FROM users WHERE user_id= "
 const UPDATE_USER_NAME__QUERY =  `UPDATE users SET first_name = '%s', last_name = '%s' WHERE user_id= %d;`
+const ADD_TOKEN_QUERY = "INSERT INTO tokens ( user_id,  token ) VALUES ('%d','%s')"

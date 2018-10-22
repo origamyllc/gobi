@@ -21,8 +21,7 @@ func main() {
 	router.HandleFunc("/user", controllers.CreateUser).Methods("POST")
 	router.HandleFunc("/user/{id}", controllers.DeleteUser).Methods("DELETE")
 	router.HandleFunc("/user/{id}", controllers.UpdateUser).Methods("PUT")
-
-	router.HandleFunc("/authenticate", controllers.AuthenticateUser).Methods("POST")
-
+	router.HandleFunc("/token", controllers.CreateUserToken).Methods("POST")
+	router.HandleFunc("/authenticate", controllers.GetUserToken).Methods("POST")
 	log.Fatal(http.ListenAndServe( ":8000", router))
 }

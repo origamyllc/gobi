@@ -8,14 +8,14 @@ import (
 	queries "gobi/src/constants/sql"
 	login_dao "gobi/src/dao/Login"
 	user_dao "gobi/src/dao/User"
-    JwtToken "gobi/src/dao/Login"
+	JwtToken "gobi/src/dao/Login"
 	db "gobi/src/database/postgres"
 	"log"
 	"net/http"
 	"os"
 )
 
-func AuthenticateUser(w http.ResponseWriter, r *http.Request){
+func CreateUserToken(w http.ResponseWriter, r *http.Request){
 	w.Header().Set("Content-Type", "application/json")
 	decoder := json.NewDecoder(r.Body)
 	var data login_dao.LoginParams
@@ -73,8 +73,22 @@ func AuthenticateUser(w http.ResponseWriter, r *http.Request){
 		if error != nil {
 			fmt.Println(error)
 		}
+		//ADD_TOKEN_QUERY
+		query := fmt.Sprintf(queries.ADD_TOKEN_QUERY, userDao.ID, tokenString )
+		err= db.Insert(query,conn)
+		fmt.Print(err)
+		if err == nil {
+			log.Print("Host: "+host +"Port: " +port+ " result:= Inserted")
+			w.WriteHeader(http.StatusCreated)
+			json.NewEncoder(w).Encode(JwtToken.JwtToken{Token: tokenString})
+		} else {
+			log.Print("Host: " + host + "Port: " + port + " result:= Not inserted")
+			w.WriteHeader(500) // unprocessable entity
+			if err := json.NewEncoder(w).Encode(err); err != nil {
+				panic(err)
+			}
+		}
 
-		json.NewEncoder(w).Encode(JwtToken.JwtToken{Token: tokenString})
 	} else {
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		w.WriteHeader(500) // unprocessable entity

@@ -19,7 +19,7 @@ func TestInsert(t *testing.T) {
 		t.Errorf("The Database %v failed to connect ",db)
 	}
 
-	query := `INSERT INTO users (age, email, first_name, last_name) VALUES (31, 'jon@cagghlhjjoun.io', 'Jonathan', 'Calhoun');`
+	query := `INSERT INTO users (username,  password, secret, first_name, last_name, email, organization_name ) VALUES ('1username','1password','secret','first_name','last_name','organization_name','email');`
 	Insert(query,db)
 }
 
@@ -29,7 +29,7 @@ func TestUpdate(t *testing.T) {
 		t.Errorf("The Database %v failed to connect ",db)
 	}
 
-	query := `UPDATE users SET first_name = 'Johnny', last_name = 'Applesjeed' WHERE id = 8;`
+	query := `UPDATE users SET first_name = 'first_name', last_name = 'last_1name' WHERE user_id= 2;;`
 	Update(query,db)
 }
 
@@ -39,7 +39,7 @@ func TestDelete(t *testing.T) {
 		t.Errorf("The Database %v failed to connect ",db)
 	}
 
-	query := `DELETE FROM users WHERE id = 1;`
+	query := `DELETE FROM users WHERE user_id= 2;`
 	Delete(query,db)
 }
 

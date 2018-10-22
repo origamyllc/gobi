@@ -40,11 +40,11 @@ func UpdateUser(w http.ResponseWriter, r *http.Request){
 
 	err = db.Update(query,conn);
 	if err == nil {
-		log.Print("Host: "+host +"Port: " +port+ " result:= Inserted")
+		log.Print("Host: "+host +"Port: " +port+ " result:= Updated")
 		w.WriteHeader(http.StatusCreated)
 		json.NewEncoder(w).Encode(map[string]string{"code":"200","message": "record sucessfully Updated"})
 	} else {
-		log.Print("Host: " + host + "Port: " + port + " result:= Not inserted")
+		log.Print("Host: " + host + "Port: " + port + " result:= Not updated")
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		w.WriteHeader(500) // unprocessable entity
 		if err := json.NewEncoder(w).Encode(err); err != nil {

@@ -13,7 +13,7 @@ type Building struct {
 	BuildingHoursOccupied         string
 	BuildingAverageHourlyEnergyConsumption     float64
 	BuildingAverageWeeklyEnergyConsumption     float64
-	BuildingAverageMonthlyEnergyConsumption     float64
+	BuildingAverageMonthlyEnergyConsumption    float64
 	BuildingAverageYearlyEnergyConsumption     float64
 }
 

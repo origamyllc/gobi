@@ -16,7 +16,7 @@ import (
 
 
 func UpdateUser(w http.ResponseWriter, r *http.Request){
-
+	// should check headers for the token and proceed only if token matches
 	w.Header().Set("Content-Type", "application/json")
 	decoder := json.NewDecoder(r.Body)
 	var data user_dao.User

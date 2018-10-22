@@ -12,6 +12,7 @@ import (
 	"os"
 )
 func GetUser(w http.ResponseWriter, r *http.Request) {
+	// should check headers for the token and proceed only if token matches
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
     key:= params["id"]

@@ -68,7 +68,8 @@ func AuthenticateUser(w http.ResponseWriter, r *http.Request){
 			"password": data.Password,
 		});
 
-		tokenString, error := token.SignedString([]byte("secret"))
+		tokenString, error := token.SignedString([]byte(userDao.Secret))
+		// save the token for the user
 		if error != nil {
 			fmt.Println(error)
 		}

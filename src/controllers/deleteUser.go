@@ -13,6 +13,7 @@ import (
 )
 
 func DeleteUser(w http.ResponseWriter, r *http.Request){
+	// should check headers for the token and proceed only if token matches
 	params := mux.Vars(r)
 	key:= params["id"]
 	log.Println("Url Param 'key' is: " + string(key))

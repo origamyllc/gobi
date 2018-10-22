@@ -26,6 +26,7 @@ Post Eg:
  */
 func CreateUser(w http.ResponseWriter, r *http.Request){
 	w.Header().Set("Content-Type", "application/json")
+	// should check headers for the token and proceed only if token matches
 	decoder := json.NewDecoder(r.Body)
 	var data user_dao.User
 	err := decoder.Decode(&data)

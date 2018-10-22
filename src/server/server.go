@@ -12,7 +12,6 @@ import (
 func main() {
 
 	// todo:server needs a connection pool ?
-	// todo secure the api endpoints
 
 	router := mux.NewRouter()
 	os.Setenv("PORT", ":8000")

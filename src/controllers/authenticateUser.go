@@ -24,7 +24,6 @@ func AuthenticateUser(w http.ResponseWriter, r *http.Request){
 		panic(err)
 	}
 
-	fmt.Print(data)
 	// 1.1  check if username existts in db
 	//      if the username exists get the corresponding password
 	//      otherwise throw an error

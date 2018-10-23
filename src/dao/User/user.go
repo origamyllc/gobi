@@ -47,3 +47,4 @@ type UserResponse struct {
 	Created  string            `json:"Created"`
 	Updated  string            `json:"Updated"`
 }
+

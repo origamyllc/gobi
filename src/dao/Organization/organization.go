@@ -36,6 +36,18 @@ create table organization_to_building
       organization_id          integer REFERENCES organization NOT NULL,
       building_id   integer  REFERENCES building NOT NULL
 	)
+
+alter table organization   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization_to_address   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization_to_address    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization_to_building  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization_to_building    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization_to_suborg   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table organization_to_suborg    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
+
+
  */
 
 type Organization struct {

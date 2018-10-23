@@ -20,6 +20,12 @@ create table room_to_gateway
       gateway_id   i   integer  REFERENCES gateway NOT NULL
 	)
 
+alter table room   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table room    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table room_to_gateway   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table room_to_gateway     add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
+
  */
 type Room struct {
 	RoomID                                 int

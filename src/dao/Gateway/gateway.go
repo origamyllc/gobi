@@ -30,6 +30,13 @@ create table gateway_to_device
       gateway_id          integer REFERENCES gateway NOT NULL,
       device_id   integer  REFERENCES device NOT NULL
 	)
+alter table gateway  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table gateway   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table gateway_to_device  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table gateway_to_device   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table gateway_to_protocol  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table gateway_to_protocol   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
 
 
 */

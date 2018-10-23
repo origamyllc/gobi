@@ -24,6 +24,14 @@ create table sub_organization_to_building
       building_id   integer  REFERENCES building NOT NULL
 	)
 
+alter table sub_organization   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sub_organization    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sub_organization_to_address   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sub_organization_to_address     add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sub_organization_to_building   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sub_organization_to_building     add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
+
 */
 
 

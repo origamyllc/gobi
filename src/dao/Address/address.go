@@ -13,6 +13,8 @@ CREATE TABLE address (
    lat                  varchar(10) NOT NULL,
    long                  varchar(10) NOT NULL
 )
+alter table address add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table address add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
 
  */
 type Address struct {

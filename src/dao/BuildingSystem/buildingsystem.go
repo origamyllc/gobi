@@ -9,6 +9,10 @@ CREATE TABLE building_system (
 	building_system_description           varchar(256) NOT NULL,
     building_system_is_active              BOOLEAN NOT NULL
 )
+
+alter table building_system add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_system  add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
 */
 type BuildingSystem struct {
 	BuildingSystemId          int

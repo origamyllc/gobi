@@ -40,6 +40,14 @@ create table device_to_building_system
       building_system_id   integer  REFERENCES building_system NOT NULL
 	)
 
+alter table device  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device_to_building_system  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device_to_building_system   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device_to_protocol  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device_to_protocol   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device_to_sensor  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table device_to_sensor   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
 
  */
 

@@ -41,6 +41,14 @@ create table sensor_to_observable
       observable_id       integer  REFERENCES observable NOT NULL
 	);
 
+alter table sensor   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor_to_protocol   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor_to_protocol     add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor_to_building_system   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor_to_building_system     add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor_to_observable add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table sensor_to_observable  add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
  */
 
 type Sensor struct {

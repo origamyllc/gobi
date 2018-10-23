@@ -36,6 +36,16 @@ create table floor_to_gateway
       gateway_id   integer  REFERENCES gateway NOT NULL
 	)
 
+alter table floor  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor_to_building_system  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor_to_building_system   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor_to_gateway  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor_to_gateway   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor_to_room  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table floor_to_room   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
+
  */
 type Floor struct {
 	FloorID                                 int

@@ -8,6 +8,11 @@ package Observable
 	observable_threshold_value                  varchar(50) NOT NULL,
 	observable__unit                  varchar(50) NOT NULL
 	)
+
+alter table observable   add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table observable    add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
+
 */
 
 type Observable struct {

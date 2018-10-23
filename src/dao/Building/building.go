@@ -40,6 +40,14 @@ create table building_to_address
 		address_id          integer REFERENCES address NOT NULL
 	)
 
+alter table building add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_to_address add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_to_address  add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_to_building_system  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_to_building_system   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_to_floor  add column  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+alter table building_to_floor   add column 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
  */
 
 type Building struct {

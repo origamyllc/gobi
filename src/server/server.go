@@ -12,6 +12,9 @@ import (
 func main() {
 
 	// todo:server needs a connection pool ?
+	// todo:server add kafka
+	// todo:server add influxdb
+	// todo:split to smaller services
 
 	router := mux.NewRouter()
 	os.Setenv("PORT", ":8000")

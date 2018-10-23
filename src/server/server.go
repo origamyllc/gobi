@@ -15,6 +15,7 @@ func main() {
 	// todo:server add kafka
 	// todo:server add influxdb
 	// todo:split to smaller services
+	// todo:pagination
 
 	router := mux.NewRouter()
 	os.Setenv("PORT", ":8000")

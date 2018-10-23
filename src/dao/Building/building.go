@@ -1,6 +1,9 @@
 package Building
 
 /**
+
+DROP TABLE IF EXISTS building;
+
 CREATE TABLE building (
     building_id                   integer PRIMARY KEY NOT NULL,
 	building_type                  varchar(50) NOT NULL,
@@ -16,19 +19,26 @@ CREATE TABLE building (
 	building_average_weekly_energy_consumption     FLOAT(10),
 	building_average_monthly_energy_consumption    FLOAT(10),
 	building_average_yearly_energy_consumption     FLOAT(10)
-)
+);
 
-alter table building
-      add constraint building_to_floor
-      foreign key (building_id)
-      references floor (floor_id);
+CREATE TABLE building_to_floor (
+    id                   integer PRIMARY KEY NOT NULL,
+    building_id          integer REFERENCES building NOT NULL,
+    floor_id             integer  REFERENCES floor NOT NULL
+);
 
+CREATE TABLE building_to_building_system (
+    id                   integer PRIMARY KEY NOT NULL,
+    building_id          integer REFERENCES building NOT NULL,
+    building_system_id   integer  REFERENCES building_system NOT NULL
+);
 
-alter table building
-      add constraint building_to_building_system
-      foreign key (building_id)
-      references building_system (building_system_id);
-
+create table building_to_address
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      building_id   integer  REFERENCES building NOT NULL,
+		address_id          integer REFERENCES address NOT NULL
+	)
 
  */
 

@@ -2,7 +2,7 @@ package Address
 
 /**
 CREATE TABLE address (
-   id                   integer PRIMARY KEY NOT NULL,
+   address_id                   integer PRIMARY KEY NOT NULL,
    address_line_1       varchar(256) NOT NULL,
    address_line_2       varchar(256) NOT NULL,
    city                 varchar(50) NOT NULL,

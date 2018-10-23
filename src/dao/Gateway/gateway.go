@@ -17,15 +17,19 @@ CREATE TABLE gateway (
 	gateway_average_yearly_energy_consumption     FLOAT(10)
 )
 
-alter table gateway
-      add constraint gateway_to_protocol
-      foreign key (gateway_id)
-      references protocols (protocol_id);
+create table gateway_to_protocol
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      gateway_id          integer REFERENCES gateway NOT NULL,
+      protocol_id   integer  REFERENCES protocols NOT NULL
+	)
 
-alter table gateway
-      add constraint gateway_to_device
-      foreign key (gateway_id)
-      references device (device_id);
+create table gateway_to_device
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      gateway_id          integer REFERENCES gateway NOT NULL,
+      device_id   integer  REFERENCES device NOT NULL
+	)
 
 
 */

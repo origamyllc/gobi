@@ -19,20 +19,27 @@ CREATE TABLE device (
 	device_average_yearly_energy_consumption     FLOAT(10)
 )
 
-alter table device
-      add constraint device_to_sensor
-      foreign key (device_id)
-      references sensor (sensor_id);
+create table device_to_sensor
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      device_id          integer REFERENCES device NOT NULL,
+      sensor_id   integer  REFERENCES sensor NOT NULL
+	)
 
-alter table device
-      add constraint device_to_protocol
-      foreign key (device_id)
-      references protocols (protocol_id);
+create table device_to_protocol
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      device_id          integer REFERENCES device NOT NULL,
+      protocol_id   integer  REFERENCES protocol NOT NULL
+	)
 
-alter table device
-      add constraint device_to_building_system
-      foreign key (device_id)
-      references building_system (building_system_id);
+create table device_to_building_system
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      device_id          integer REFERENCES device NOT NULL,
+      building_system_id   integer  REFERENCES building_system NOT NULL
+	)
+
 
  */
 

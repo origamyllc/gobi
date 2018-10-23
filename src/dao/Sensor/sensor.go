@@ -19,20 +19,27 @@ CREATE TABLE sensor (
 )
 
 
-alter table sensor
-      add constraint sensor_to_protocol
-      foreign key (sensor_id)
-      references protocols (protocol_id);
 
-alter table sensor
-      add constraint sensor_to_observable
-      foreign key (sensor_id)
-      references observable (observable_id);
+create table sensor_to_protocol
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      sensor_id          integer REFERENCES sensor NOT NULL,
+      protocol_id       integer  REFERENCES protocols NOT NULL
+	);
 
-alter table sensor
-      add constraint sensor_to_building_system
-      foreign key (sensor_id)
-      references building_system (building_system_id);
+create table sensor_to_building_system
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      sensor_id          integer REFERENCES sensor NOT NULL,
+      building_system_id       integer  REFERENCES building_system  NOT NULL
+	);
+
+create table sensor_to_observable
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      sensor_id          integer REFERENCES sensor NOT NULL,
+      observable_id       integer  REFERENCES observable NOT NULL
+	);
 
  */
 

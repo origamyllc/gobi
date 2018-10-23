@@ -15,20 +15,26 @@ CREATE TABLE floor (
 	floors_average_yearly_energy_consumption     FLOAT(10)
 )
 
-alter table floor
-      add constraint floor_to_building_system
-      foreign key (floor_id)
-      references building_system (building_system_id);
+create table floor_to_building_system
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      floor_id          integer REFERENCES floor NOT NULL,
+      building_system_id   integer  REFERENCES building_system NOT NULL
+	)
 
-alter table floor
-      add constraint floor_to_room
-      foreign key (floor_id)
-      references room (room_id);
+create table floor_to_room
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      floor_id          integer REFERENCES floor NOT NULL,
+      room_id   integer  REFERENCES room NOT NULL
+	)
 
-alter table floor
-      add constraint floor_to_gateway
-      foreign key (floor_id)
-      references gateway (gateway_id);
+create table floor_to_gateway
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      floor_id          integer REFERENCES floor NOT NULL,
+      gateway_id   integer  REFERENCES gateway NOT NULL
+	)
 
  */
 type Floor struct {

@@ -11,10 +11,18 @@ CREATE TABLE sub_organization (
 	sub_organization_primary_contact_email         varchar(50)
 )
 
-alter table sub_organization
-      add constraint sub_organization_to_building
-      foreign key (sub_organization_id)
-      references building (building_id);
+create table sub_organization_to_address
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      sub_organization_id          integer REFERENCES sub_organization NOT NULL,
+      address_id   integer  REFERENCES address NOT NULL
+	)
+create table sub_organization_to_building
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      sub_organization_id          integer REFERENCES sub_organization NOT NULL,
+      building_id   integer  REFERENCES building NOT NULL
+	)
 
 */
 

@@ -15,15 +15,27 @@ CREATE TABLE organization (
 
 ALTER  TABLE organization DROP COLUMN organization_category_code_id;
 alter table organization add column organization_category_code  varchar(50) NOT NULL;
-alter table organization
-      add constraint organization_to_sub_org
-      foreign key (organization_id)
-      references sub_organization (sub_organization_id);
 
-alter table organization
-      add constraint organization_to_building
-      foreign key (organization_id)
-      references building (building_id);
+create table organization_to_address
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      organization_id          integer REFERENCES organization NOT NULL,
+      address_id   integer  REFERENCES address NOT NULL
+	)
+
+create table organization_to_suborg
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      organization_id          integer REFERENCES organization NOT NULL,
+      sub_organization_id   integer  REFERENCES sub_organization NOT NULL
+	)
+
+create table organization_to_building
+    (
+	  id                   integer PRIMARY KEY NOT NULL,
+      organization_id          integer REFERENCES organization NOT NULL,
+      building_id   integer  REFERENCES building NOT NULL
+	)
  */
 
 type Organization struct {

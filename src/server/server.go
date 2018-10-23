@@ -16,6 +16,7 @@ func main() {
 	// todo:server add influxdb
 	// todo:split to smaller services
 	// todo:pagination
+	// todo:add swagger
 
 	router := mux.NewRouter()
 	os.Setenv("PORT", ":8000")

@@ -45,9 +45,14 @@ type SubOrg struct {
 	SubOrgAddressID        int
 	SubOrganizationPrimaryContactName   string
 	SubOrganizationPrimaryEmail         string
+	Created  string
+	Updated  string
 }
 
 type SubOrgToBuilding struct {
+	Id int
 	SubOrganizationID int
 	BuildingID int
+	Created  string
+	Updated  string
 }

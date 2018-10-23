@@ -38,9 +38,14 @@ type Room struct {
 	RoomAverageWeeklyEnergyConsumption     float64
 	RoomAverageMonthlyEnergyConsumption    float64
 	RoomAverageYearlyEnergyConsumption     float64
+	Created  string
+	Updated  string
 }
 
 type RoomToGateway struct {
+	Id int
 	RoomID   int
 	GatewayID    int
+	Created  string
+	Updated  string
 }

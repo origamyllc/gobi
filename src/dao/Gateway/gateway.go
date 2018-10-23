@@ -54,15 +54,23 @@ type Gateway struct {
 	GatewayAverageWeeklyEnergyConsumption     float64
 	GatewayAverageMonthlyEnergyConsumption     float64
 	GatewayAverageYearlyEnergyConsumption     float64
+	Created  string
+	Updated  string
 }
 
 type GatewayToProtocol struct {
+	Id int
 	GatewayID int
 	ProtocolID int
+	Created  string
+	Updated  string
 }
 
 type GatewayToDevice struct {
+	Id int
 	GatewayID int
 	DeviceID int
+	Created  string
+	Updated  string
 }
 

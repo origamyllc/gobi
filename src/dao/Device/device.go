@@ -66,19 +66,30 @@ type Device struct {
 	DeviceAverageWeeklyEnergyConsumption     float64
 	DeviceAverageMonthlyEnergyConsumption     float64
 	DeviceAverageYearlyEnergyConsumption     float64
+	Created  string
+	Updated  string
 }
 
 type DeviceToSensor struct {
+	Id  int
 	DeviceID       int
 	SensorID   int
+	Created  string
+	Updated  string
 }
 
 type DeviceToProtocol struct {
+	Id  int
 	DeviceID       int
 	ProtocolID   int
+	Created  string
+	Updated  string
 }
 
 type DeviceToBuildingSystem struct {
+	Id  int
 	DeviceID int
 	BuildingSystemID    int
+	Created  string
+	Updated  string
 }

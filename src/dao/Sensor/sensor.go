@@ -66,19 +66,30 @@ type Sensor struct {
 	SensorAverageWeeklyEnergyConsumption     float64
 	SensorAverageMonthlyEnergyConsumption     float64
 	SensorAverageYearlyEnergyConsumption     float64
+	Created  string
+	Updated  string
 }
 
 type SensorToObservable struct {
+	Id int
 	SensorID       int
 	ObservableID   int
+	Created  string
+	Updated  string
 }
 
 type SensorToProtocol struct {
+	Id int
 	SensorID       int
 	ProtocolID   int
+	Created  string
+	Updated  string
 }
 
 type SensorToBuildingSystem struct {
+	Id int
 	SensorID int
 	BuildingSystemID    int
+	Created  string
+	Updated  string
 }

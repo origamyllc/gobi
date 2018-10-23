@@ -20,4 +20,6 @@ type BuildingSystem struct {
 	BuildingSystemType        string
 	BuildingSystemDescription string
 	isActive                  string
+	Created  string
+	Updated  string
 }

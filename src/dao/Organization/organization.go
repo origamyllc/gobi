@@ -59,14 +59,22 @@ type Organization struct {
 	OrganizationPrimaryContactName   string
 	OrganizationPrimaryEmail         string
 	OrganizationAddressID             int
+	Created  string
+	Updated  string
 }
 
 type OrgToSubOrg struct {
+	Id int
 	OrganizationID int
 	SubOrganizqationID int
+	Created  string
+	Updated  string
 }
 
 type OrgToBuilding struct {
+	Id int
 	OrganizationID int
 	BuildingID int
+	Created  string
+	Updated  string
 }

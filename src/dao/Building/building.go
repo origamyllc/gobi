@@ -65,14 +65,22 @@ type Building struct {
 	BuildingAverageWeeklyEnergyConsumption     float64
 	BuildingAverageMonthlyEnergyConsumption    float64
 	BuildingAverageYearlyEnergyConsumption     float64
+	Created  string
+	Updated  string
 }
 
 type BuildingToFloor struct{
+	Id   int
 	BuildingID int
 	FloorID    int
+	Created  string
+	Updated  string
 }
 
 type BuildingToBuildingSystem struct {
+	Id   int
 	BuildingID int
 	BuildingSystemID    int
+	Created  string
+	Updated  string
 }

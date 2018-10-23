@@ -21,4 +21,6 @@ type Observable struct {
 	ObservableType string
 	ObservableThreholdValue string
 	ObservableUnit string
+	Created  string
+	Updated  string
 }

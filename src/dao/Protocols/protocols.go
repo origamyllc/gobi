@@ -17,4 +17,6 @@ type Protocol struct {
 	ProtocolID          int
 	ProtocolName        string
 	ProtocolDescription string
+	Created  string
+	Updated  string
 }

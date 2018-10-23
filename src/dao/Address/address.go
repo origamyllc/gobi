@@ -28,4 +28,6 @@ type Address struct {
 	CountryCode  string
 	Lat          float64
 	Long         float64
+	Created  string
+	Updated  string
 }

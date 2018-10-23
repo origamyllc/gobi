@@ -59,19 +59,28 @@ type Floor struct {
 	FloorAverageWeeklyEnergyConsumption     float64
 	FloorAverageMonthlyEnergyConsumption    float64
 	FloorAverageYearlyEnergyConsumption     float64
+	Created  string
+	Updated  string
 }
 
 type FloorToBuildingSystem struct {
+	Id int
 	FloorID   int
 	BuildingSystemID    int
+	Created  string
+	Updated  string
 }
 
 type FloorToRoom struct {
 	FloorID   int
 	RoomID    int
+	Created  string
+	Updated  string
 }
 
 type FloorToGateway struct {
 	FloorID   int
 	GatewayID    int
+	Created  string
+	Updated  string
 }

@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  digest = "1:a878821c51a2390c0c958d179e7e19ec42cf55a9cce6d4bdbc61d7421b209014"
+  name = "github.com/confluentinc/confluent-kafka-go"
+  packages = ["kafka"]
+  pruneopts = "UT"
+  revision = "5e4d04e05fc319ce5996a867aafef29059f26862"
+  version = "v0.11.4"
+
+[[projects]]
   digest = "1:76dc72490af7174349349838f2fe118996381b31ea83243812a97e5a0fd5ed55"
   name = "github.com/dgrijalva/jwt-go"
   packages = ["."]
@@ -36,13 +44,34 @@
   revision = "4ded0e9383f75c197b3a2aaa6d590ac52df6fd79"
   version = "v1.0.0"
 
+[[projects]]
+  branch = "master"
+  digest = "1:90e0ca94d7757d700f8234840332dbf7ae77f6a7edb93a8833ef1c08945a5a3b"
+  name = "github.com/reactivex/rxgo"
+  packages = [
+    ".",
+    "errors",
+    "fx",
+    "handlers",
+    "observable",
+    "observer",
+    "subscription",
+  ]
+  pruneopts = "UT"
+  revision = "21fa53a3ca38091241bf9037b825dba817efb24a"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/confluentinc/confluent-kafka-go/kafka",
     "github.com/dgrijalva/jwt-go",
     "github.com/gorilla/mux",
     "github.com/lib/pq",
+    "github.com/reactivex/rxgo",
+    "github.com/reactivex/rxgo/handlers",
+    "github.com/reactivex/rxgo/observable",
+    "github.com/reactivex/rxgo/observer",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

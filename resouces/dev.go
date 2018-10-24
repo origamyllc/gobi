@@ -6,3 +6,14 @@ func GetDatabaseConstants()(string){
 	return Text;
 }
 
+
+func GetKafkaProducerConstants()(string){
+	Text := "{\"bootstrap.servers\":\"localhost\",\"Port\": \"9092\",\"Topic\": \"find-device\"}"
+	return Text;
+}
+
+func GetKafkaConsumerConstants()(string) {
+	Text := "{\"bootstrap.servers\": \"localhost\",\"group.id\":\"myGroup\",\"auto.offset.reset\":\"earliest\"}"
+	return Text;
+}
+

@@ -12,11 +12,12 @@ import (
 func main() {
 
 	// todo:server needs a connection pool ?
-	// todo:server add kafka
 	// todo:server add influxdb
 	// todo:split to smaller services
 	// todo:pagination
 	// todo:add swagger
+	// todo:enhance to add bacnet support object input model from  -- https://w3.usa.siemens.com/buildingtechnologies/us/en/consulting-engineer/engineeradvantage/Documents/BACnet%20Application%20Guide%20for%20Consulting%20Engineers%20125-1984T.pdf
+	// todo:separate the database and middleware into a new importable library
 
 	router := mux.NewRouter()
 	os.Setenv("PORT", ":8000")

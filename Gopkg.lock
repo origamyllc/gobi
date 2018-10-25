@@ -34,6 +34,19 @@
   version = "v1.6.2"
 
 [[projects]]
+  digest = "1:721a8f79098d6c0e45fa0d1b2c38271c491551261210f146b6143312274a616d"
+  name = "github.com/influxdata/influxdb"
+  packages = [
+    "client",
+    "client/v2",
+    "models",
+    "pkg/escape",
+  ]
+  pruneopts = "UT"
+  revision = "389de31c961831de0a9f4172173337d4a6193909"
+  version = "v1.6.3"
+
+[[projects]]
   digest = "1:8ef506fc2bb9ced9b151dafa592d4046063d744c646c1bbe801982ce87e4bc24"
   name = "github.com/lib/pq"
   packages = [
@@ -44,22 +57,6 @@
   revision = "4ded0e9383f75c197b3a2aaa6d590ac52df6fd79"
   version = "v1.0.0"
 
-[[projects]]
-  branch = "master"
-  digest = "1:90e0ca94d7757d700f8234840332dbf7ae77f6a7edb93a8833ef1c08945a5a3b"
-  name = "github.com/reactivex/rxgo"
-  packages = [
-    ".",
-    "errors",
-    "fx",
-    "handlers",
-    "observable",
-    "observer",
-    "subscription",
-  ]
-  pruneopts = "UT"
-  revision = "21fa53a3ca38091241bf9037b825dba817efb24a"
-
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
@@ -67,11 +64,9 @@
     "github.com/confluentinc/confluent-kafka-go/kafka",
     "github.com/dgrijalva/jwt-go",
     "github.com/gorilla/mux",
+    "github.com/influxdata/influxdb/client",
+    "github.com/influxdata/influxdb/client/v2",
     "github.com/lib/pq",
-    "github.com/reactivex/rxgo",
-    "github.com/reactivex/rxgo/handlers",
-    "github.com/reactivex/rxgo/observable",
-    "github.com/reactivex/rxgo/observer",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

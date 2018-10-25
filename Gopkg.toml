@@ -44,3 +44,7 @@
 [[constraint]]
   branch = "master"
   name = "github.com/reactivex/rxgo"
+
+[[constraint]]
+  name = "github.com/influxdata/influxdb"
+  version = "1.6.3"

@@ -31,7 +31,7 @@ func main() {
 	router.HandleFunc("/user", controllers.CreateUser).Methods("POST")
 	router.HandleFunc("/user/{id}", controllers.DeleteUser).Methods("DELETE")
 	router.HandleFunc("/user/{id}", controllers.UpdateUser).Methods("PUT")
-
+	log.Fatal(http.ListenAndServe( ":8000", router))
 
 	/**
 		router.HandleFunc("/organization", controllers.GetOrganizations).Methods("GET")
@@ -201,5 +201,5 @@ func main() {
 
 
 	 */
-	log.Fatal(http.ListenAndServe( ":8000", router))
+
 }

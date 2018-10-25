@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43b69e0a-0599-4897-a9c5-b76e6b0fb0ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/middleware/kafka/kafka.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/kafka/kafka_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/influx/influx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/influx/influx_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resouces/dev.go" beforeDir="false" afterPath="$PROJECT_DIR$/resouces/dev.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,28 +110,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="161" />
+          <entry key="go" value="164" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="161" />
+          <entry key="Go" value="164" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="14479" />
+          <entry key="go" value="15905" />
           <entry key="txt" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="14479" />
+          <entry key="Go" value="15905" />
           <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
         <counts>
+          <entry key=".append" value="1" />
+          <entry key=".close" value="1" />
           <entry key=".p" value="2" />
         </counts>
       </usages-collector>
@@ -143,8 +144,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+            <state relative-caret-position="225">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/influx/influx.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="12" />
+              <folding>
+                <element signature="e#14#178#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/database/influx/influx_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,11 +183,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/middleware/kafka/kafka_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="-279">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#14#87#0" expanded="true" />
               </folding>
@@ -173,20 +198,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="78">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="44" />
               <folding>
                 <element signature="e#18#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resouces/dev.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="100" lean-forward="true" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -204,19 +220,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/Sensor/sensor.go">
+        <entry file="file://$PROJECT_DIR$/resouces/dev.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/SubOrg/suborg.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -264,8 +271,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../godzilla/src/serialization/Json.go" />
-        <option value="$PROJECT_DIR$/../godzilla/resouces/dev.go" />
         <option value="$PROJECT_DIR$/../godzilla/src/datastructures/List/List.go" />
         <option value="$PROJECT_DIR$/../godzilla/src/database/postgres.go" />
         <option value="$PROJECT_DIR$/../godzilla/src/database/postgres_test.go" />
@@ -311,10 +316,12 @@
         <option value="$PROJECT_DIR$/src/dao/User/user.go" />
         <option value="$PROJECT_DIR$/src/dao/Alarm/alarm.go" />
         <option value="$PROJECT_DIR$/src/dao/DeviceProperties/deviceproperties.go" />
-        <option value="$PROJECT_DIR$/src/server/server.go" />
         <option value="$PROJECT_DIR$/resouces/dev.go" />
         <option value="$PROJECT_DIR$/src/middleware/kafka/kafka.go" />
         <option value="$PROJECT_DIR$/src/middleware/kafka/kafka_test.go" />
+        <option value="$PROJECT_DIR$/src/server/server.go" />
+        <option value="$PROJECT_DIR$/src/database/influx/influx.go" />
+        <option value="$PROJECT_DIR$/src/database/influx/influx_test.go" />
       </list>
     </option>
   </component>
@@ -365,20 +372,20 @@
               <item name="gobi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="influx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goTutorials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gobi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="postgres" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goTutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="gobi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goTutorials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gobi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="middleware" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -457,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestConnectToProducer in gobi/src/middleware/kafka">
+  <component name="RunManager" selected="Go Test.TestDelete in gobi/src/database/influx">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="gobi" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -468,57 +475,59 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build kafka.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAddPointToBatch in gobi/src/database/influx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gobi" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/middleware/kafka/kafka.go" />
-      <package value="awesomeProject" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestConnectToConsumer in gobi/src/middleware/kafka" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="gobi" />
-      <working_directory value="$PROJECT_DIR$/src/middleware/kafka" />
+      <working_directory value="$PROJECT_DIR$/src/database/influx" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="gobi/src/middleware/kafka" />
+      <package value="gobi/src/database/influx" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestConnectToConsumer$" />
+      <pattern value="^TestAddPointToBatch$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestConnectToProducer in gobi/src/middleware/kafka" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDelete in gobi/src/database/influx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gobi" />
-      <working_directory value="$PROJECT_DIR$/src/middleware/kafka" />
+      <working_directory value="$PROJECT_DIR$/src/database/influx" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="gobi/src/middleware/kafka" />
+      <package value="gobi/src/database/influx" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestConnectToProducer$" />
+      <pattern value="^TestDelete$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestConsume in gobi/src/middleware/kafka" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExecute in gobi/src/database/influx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gobi" />
-      <working_directory value="$PROJECT_DIR$/src/middleware/kafka" />
+      <working_directory value="$PROJECT_DIR$/src/database/influx" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="gobi/src/middleware/kafka" />
+      <package value="gobi/src/database/influx" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestConsume$" />
+      <pattern value="^TestExecute$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestPublish in gobi/src/middleware/kafka" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSelect in gobi/src/database/influx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="gobi" />
-      <working_directory value="$PROJECT_DIR$/src/middleware/kafka" />
+      <working_directory value="$PROJECT_DIR$/src/database/influx" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="gobi/src/middleware/kafka" />
+      <package value="gobi/src/database/influx" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestPublish$" />
+      <pattern value="^TestSelect$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWriteBatch in gobi/src/database/influx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gobi" />
+      <working_directory value="$PROJECT_DIR$/src/database/influx" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gobi/src/database/influx" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestWriteBatch$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -533,52 +542,52 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build kafka.go" />
-      <item itemvalue="Go Test.TestPublish in gobi/src/middleware/kafka" />
-      <item itemvalue="Go Test.TestConsume in gobi/src/middleware/kafka" />
-      <item itemvalue="Go Test.TestConnectToProducer in gobi/src/middleware/kafka" />
-      <item itemvalue="Go Test.TestConnectToConsumer in gobi/src/middleware/kafka" />
+      <item itemvalue="Go Test.TestAddPointToBatch in gobi/src/database/influx" />
+      <item itemvalue="Go Test.TestWriteBatch in gobi/src/database/influx" />
+      <item itemvalue="Go Test.TestSelect in gobi/src/database/influx" />
+      <item itemvalue="Go Test.TestDelete in gobi/src/database/influx" />
+      <item itemvalue="Go Test.TestExecute in gobi/src/database/influx" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestConnectToProducer in gobi/src/middleware/kafka" />
-        <item itemvalue="Go Test.TestPublish in gobi/src/middleware/kafka" />
-        <item itemvalue="Go Test.TestConnectToConsumer in gobi/src/middleware/kafka" />
-        <item itemvalue="Go Test.TestConsume in gobi/src/middleware/kafka" />
-        <item itemvalue="Go Build.go build kafka.go" />
+        <item itemvalue="Go Test.TestDelete in gobi/src/database/influx" />
+        <item itemvalue="Go Test.TestExecute in gobi/src/database/influx" />
+        <item itemvalue="Go Test.TestWriteBatch in gobi/src/database/influx" />
+        <item itemvalue="Go Test.TestSelect in gobi/src/database/influx" />
+        <item itemvalue="Go Test.TestAddPointToBatch in gobi/src/database/influx" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestConsume_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 54m 05s.xml">
-      <configuration name="TestConsume in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDelete_in_gobi_src_database_influx - 2018.10.25 at 13h 16m 49s.xml">
+      <configuration name="TestDelete in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConsume_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 54m 53s.xml">
-      <configuration name="TestConsume in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExecute_in_gobi_src_database_influx - 2018.10.25 at 13h 16m 55s.xml">
+      <configuration name="TestExecute in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConsume_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 55m 17s.xml">
-      <configuration name="TestConsume in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDelete_in_gobi_src_database_influx - 2018.10.25 at 13h 17m 06s.xml">
+      <configuration name="TestDelete in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConsume_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 55m 32s.xml">
-      <configuration name="TestConsume in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDelete_in_gobi_src_database_influx - 2018.10.25 at 13h 18m 25s.xml">
+      <configuration name="TestDelete in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConnectToProducer_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 55m 41s.xml">
-      <configuration name="TestConnectToProducer in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExecute_in_gobi_src_database_influx - 2018.10.25 at 13h 19m 12s.xml">
+      <configuration name="TestExecute in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConnectToProducer_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 56m 30s.xml">
-      <configuration name="TestConnectToProducer in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExecute_in_gobi_src_database_influx - 2018.10.25 at 13h 22m 12s.xml">
+      <configuration name="TestExecute in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConnectToConsumer_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 58m 52s.xml">
-      <configuration name="TestConnectToConsumer in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExecute_in_gobi_src_database_influx - 2018.10.25 at 13h 22m 41s.xml">
+      <configuration name="TestExecute in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestPublish_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 59m 39s.xml">
-      <configuration name="TestPublish in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestWriteBatch_in_gobi_src_database_influx - 2018.10.25 at 13h 23m 15s.xml">
+      <configuration name="TestWriteBatch in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConnectToProducer_in_gobi_src_middleware_kafka - 2018.10.23 at 19h 59m 43s.xml">
-      <configuration name="TestConnectToProducer in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestExecute_in_gobi_src_database_influx - 2018.10.25 at 13h 23m 20s.xml">
+      <configuration name="TestExecute in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestConnectToProducer_in_gobi_src_middleware_kafka - 2018.10.23 at 20h 00m 15s.xml">
-      <configuration name="TestConnectToProducer in gobi/src/middleware/kafka" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestDelete_in_gobi_src_database_influx - 2018.10.25 at 13h 23m 27s.xml">
+      <configuration name="TestDelete in gobi/src/database/influx" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -627,8 +636,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../godzilla/src/datasructures/Stack/Stack.go" />
-    <entry file="file://$PROJECT_DIR$/../godzilla/src/datasructures/Tree/Binarysearchtree/BST.go" />
     <entry file="file://$PROJECT_DIR$/../godzilla/src/datasructures/Graph/Graph.go" />
     <entry file="file://$PROJECT_DIR$/../godzilla/src/main/goWorld.go" />
     <entry file="file://$PROJECT_DIR$/../godzilla/test/testList.go" />
@@ -717,6 +724,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="e#21#286#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -819,23 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="119" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="119" />
-          <folding>
-            <element signature="e#104#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/Sensor/sensor.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
@@ -864,20 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#18#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resouces/dev.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="100" lean-forward="true" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="108" />
+          <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="108" />
         </state>
       </provider>
     </entry>
@@ -890,10 +873,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middleware/kafka/kafka_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="-279">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#14#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="e#18#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/postgres/postgres.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="119" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="119" />
+          <folding>
+            <element signature="e#104#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/influx/influx.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/influx/influx_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

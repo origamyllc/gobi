@@ -12,7 +12,6 @@ import (
 func main() {
 
 	// todo:server needs a connection pool ?
-	// todo:server add influxdb
 	// todo:add log forwarding
 	// todo:split to smaller services
 	// todo:pagination

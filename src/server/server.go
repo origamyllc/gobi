@@ -12,7 +12,8 @@ import (
 func main() {
 
 	// todo:server needs a connection pool ?
-	// todo:add log forwarding
+	// todo:add log forwarding -- using telegraph ?
+	// todo:add metrics forwarding
 	// todo:split to smaller services
 	// todo:pagination
 	// todo:add swagger
